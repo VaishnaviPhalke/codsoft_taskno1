@@ -1,0 +1,318 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1 em;
+}
+
+nav {
+  background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+   margin-top: 10px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.project-component {
+  margin-bottom: 40px;
+}
+
+.project-component h3 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.web-development .project img,
+.cpp-projects .project img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.web-development .project h4,
+.cpp-projects .project h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.web-development .project p,
+.cpp-projects .project p {
+  font-size: 1em;
+}
+
+/* ... (existing styles) */
+
+.skills {
+  margin-top: 20px;
+}
+
+.skills h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.skill {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 150px; /* Adjust the width as needed */
+}
+
+.skill img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1em;
+}
+
+/* ... (existing styles) */
+
+
+/* ... (existing styles) */
+/* 
+.skills {
+  margin-top: 20px;
+}
+
+.skills h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.skill:hover {
+  background-color: #45a049;
+} */
+
+
+
+#trainings {
+  margin-top: 20px;
+}
+
+#trainings h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.training-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.training-card h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.training-card p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* ... (existing styles) */
+
+.dark-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.social-icons {
+  flex: 1;
+}
+
+.contact-info a{
+ text-decoration: none;
+ color:white;
+}
+
+
+.social-icons .icon-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 30px; /* Adjust the size of social icons as needed */
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* ... (existing styles) */
+
+.training-card a {
+  text-decoration: none;
+  color: #3498db; /* Choose a color that fits your design */
+}
+
+.training-card a:hover {
+  text-decoration: underline;
+}
+
+/* ... (existing styles) */
+
+
+
+/* ... (existing styles) */
+
+
+/* ... (existing styles) */
+
+.web-development .project img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Make the image fill the container width */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 1 / 1; /* Ensure a square aspect ratio */
+}
+
+/* ... (existing styles) */
+
+
+
+
+
+
